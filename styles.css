@@ -54,11 +54,17 @@ body {
     text-align: justify;
 }
 
+.r img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 .pjl {
     margin-left: 40px;
     margin-right: 40px;
     text-align: justify;
-    
 }
 .pjl a {
     /* font-family: 'Times New Roman', Times, serif; */
