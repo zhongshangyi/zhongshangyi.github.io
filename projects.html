@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shangyi Zhong</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="alsome.png">
 </head>
 <body>
@@ -15,16 +16,33 @@
         <a href="projects.html" class="active">Projects</a>
     </nav>
 
-    <div class="pjl">
-        <h1>Projects</h1>
-        <ul>
-            <li><a href="digital.html">How Age Affects the Second- and Third-Level Digital Divide: A Research Based on a Questionnaire-Based Survey</a></li>
-            <li><a href="bio.html">Write Your Biography!</a></li>
-            <li><a href="haining.html">Haining research!</a></li>
-            <li><a href="yiwu.html">Yiwu research!</a></li>
-        </ul>
+    <div class="container">
+        <div class="r">
+            <h1>Projects</h1>
+            <ul>
+                <li><a href="digital.html">How Age Affects the Second- and Third-Level Digital Divide: A Research Based on a Questionnaire-Based Survey</a></li>
+                <li><a href="bio.html">Write Your Biography!</a></li>
+                <li><a href="haining.html">Haining research!</a></li>
+                <li><a href="yiwu.html">Yiwu research!</a></li>
+            </ul>
+            
+        </div>
+        <div class="l">
+            <br><br><br>
+            <div id="slider">
+                <div class="slide">
+                    <img src="alsome.png" alt="Also me">
+                    <figcaption>Also meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso</figcaption>
+                </div>
+                <div class="slide">
+                    <img src="me.png" alt="Me (left)">
+                    <figcaption>me</figcaption>
+                </div>
+            </div>
+            <div class="sequence-display" id="sequence">1 / 2</div>
+            <a class="prev" onclick="changeSlides(-1)">❮</a>
+            <a class="next" onclick="changeSlides(1)">❯</a>
+        </div>
     </div>
-    
-    
 </body>
 </html>

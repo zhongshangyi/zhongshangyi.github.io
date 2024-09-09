@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shangyi Zhong</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="alsome.png">
 </head>
 <body>
@@ -14,20 +15,38 @@
         <a href="awards.html" class="active">Tests and Awards</a>
         <a href="projects.html">Projects</a>
     </nav>
-    <div class="pjl">
-        <h1>Standardized Tests</h1>
-        <ul>
-            <li>TOEFL: 115</li>
-            <li>SAT: 1550</li>
-        </ul>
-        <h1>Awards</h1>
-        <ul>
-            <li>The 10th Annual International Mathematical Modeling Challenge The International Contest of Greater China Finalist (7%)</li>
-            <li>The 10th Annual International Mathematical Modeling Challenge The Regional Contest of Greater China Meritorious (12%)</li>
-            <li>2024 Physics Bowl National Silver (25%)</li>
-            <li>2023-2024 top 5% student at High School Affiliated to Renmin University of China (~350 students in total)</li>
-            <li>2024 John Locke Essay Competition First Prize (hopefully)</li>
-        </ul>
+    <div class="container">
+        <div class="r">
+            <h1>Standardized Tests</h1>
+            <ul>
+                <li>TOEFL: 115</li>
+                <li>SAT: 1550</li>
+            </ul>
+            <h1>Awards</h1>
+            <ul>
+                <li>The 10th Annual International Mathematical Modeling Challenge The International Contest of Greater China Finalist (7%)</li>
+                <li>The 10th Annual International Mathematical Modeling Challenge The Regional Contest of Greater China Meritorious (12%)</li>
+                <li>2024 Physics Bowl National Silver (25%)</li>
+                <li>2023-2024 top 5% student at High School Affiliated to Renmin University of China (~350 students in total)</li>
+                <li>2024 John Locke Essay Competition First Prize (hopefully)</li>
+            </ul>
+        </div>
+        <div class="l">
+            <br><br><br>
+            <div id="slider">
+                <div class="slide">
+                    <img src="alsome.png" alt="Also me">
+                    <figcaption>Also meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso meAlso</figcaption>
+                </div>
+                <div class="slide">
+                    <img src="me.png" alt="Me (left)">
+                    <figcaption>me</figcaption>
+                </div>
+            </div>
+            <div class="sequence-display" id="sequence">1 / 2</div>
+            <a class="prev" onclick="changeSlides(-1)">❮</a>
+            <a class="next" onclick="changeSlides(1)">❯</a>
+        </div>
     </div>
 </body>
 </html>

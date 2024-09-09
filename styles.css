@@ -3,23 +3,15 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    /* background-color: rgb(255, 229, 229); */
-    /* color:rgb(68, 68, 68) */
-    /* background-image: url(bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover; */
-    
 }
 
 h1{
     color: rgb(62, 126, 201);
 }
+
 h2,h3,h4{
     color: rgb(101, 168, 239);
 }
-
 
 .navbar {
     display: flex;
@@ -60,8 +52,12 @@ h2,h3,h4{
 
 .l img {
     max-width: 100%;
-    border-radius: 30px;
+    
     /* box-shadow: 5px 5px 5px rgb(128, 128, 128); */
+}
+
+.rounded img {
+    border-radius: 15px;
 }
 
 .l figcaption {
@@ -75,6 +71,11 @@ h2,h3,h4{
 }
 
 .r p {
+    font-size: large;
+    text-align: justify;
+}
+
+.r li {
     font-size: large;
     text-align: justify;
 }
@@ -159,13 +160,13 @@ h2,h3,h4{
     border-right: none;
 }
 
-.pjl ul {
+.r ul {
     padding: 0;
     font-size: large;
     line-height: 1.5;
 }
 
-.pjl ul li a {
+.r ul li a {
     text-decoration: none; /* Remove underline */
     color: blue; /* Same as navbar */
     padding: 3px 5px; /* Same padding as navbar */
@@ -174,9 +175,79 @@ h2,h3,h4{
     
 }
 
-.pjl ul li a:hover {
+.r ul li a:hover {
     background-color: rgb(218, 232, 251); /* Hover background color */
     border-radius: 3px; /* Rounded corners like navbar */
     color: rgb(44, 103, 188); /* Change text color on hover */
 }
 
+/* Container for the slider */
+#slider {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative; /* Necessary for positioning arrows within the slider */
+    margin: 0 auto; /* Centers the slider horizontally */
+}
+
+/* Each slide */
+.slide {
+    max-width: 100%;
+    float: left;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    top: 50%; /* Centers vertically */
+    width: auto;
+    padding: 3px;
+    margin-top: -22px; /* Offset to perfectly center vertically */
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background for arrows */
+    border-radius: 3px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    z-index: 10; /* Ensures arrows are on top of images */
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 3px 3px 3px;
+}
+
+/* Hover effect for arrows */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Sequence display */
+.sequence-display {
+    position: relative;
+    bottom: 0px; /* 10px from the bottom */
+    left:0px; /* 10px from the left */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 3px 3px;
+    font-size: 16px;
+    border-radius: 3px;
+    z-index: 20; /* Above the image */
+    width: 8%;
+
+}
+
+
+  
