@@ -14,14 +14,10 @@ body {
 }
 
 h1{
-    color: rgb(142, 122, 181);
+    color: rgb(62, 126, 201);
 }
-h2{
-    color: rgb(183, 132, 183);
-}
-
-h3, h4 {
-    color: rgb(224, 174, 208);
+h2,h3,h4{
+    color: rgb(101, 168, 239);
 }
 
 
@@ -45,7 +41,7 @@ h3, h4 {
 }
 
 .navbar a.active {
-    background-color: rgb(218, 200, 245);
+    background-color: rgb(223, 208, 245);
     border-radius: 5px;
     color: rgb(108, 37, 195);
 }
@@ -57,8 +53,8 @@ h3, h4 {
 
 .l {
     max-width: 30%; /* Adjust image width */
-    margin-right: 60px; /* Space between image and text */
-    margin-left: 120px;
+    margin-right: 120px; /* Space between image and text */
+    margin-left: 60px;
     margin-top: 20px;
 }
 
@@ -75,7 +71,7 @@ h3, h4 {
 
 .r {
     flex: 1; /* Allow paragraph to grow */
-    margin-right: 120px;
+    margin-left: 120px;
 }
 
 .r p {
@@ -94,8 +90,10 @@ h3, h4 {
     margin-left: 120px;
     margin-right: 120px;
     text-align: justify;
-    line-height: 1.5;
-    font-size: large;
+}
+
+.pjl ul {
+    font-size: x-large;
 }
 
 .ddd {
@@ -161,17 +159,24 @@ h3, h4 {
     border-right: none;
 }
 
+.pjl ul {
+    padding: 0;
+    font-size: large;
+    line-height: 1.5;
+}
 
+.pjl ul li a {
+    text-decoration: none; /* Remove underline */
+    color: blue; /* Same as navbar */
+    padding: 3px 5px; /* Same padding as navbar */
+    text-decoration: underline;
+    display: inline-block; /* Ensure padding covers the entire clickable area */
+    
+}
 
-/* .tb2, th, td{
-    border-left: none;
-    border-right: none;
-} */
-
-/* .tb2 th tb {
-    border:1px solid black;
-    border-collapse: collapse;
-    border-left: none;
-    border-right: none;
-} */
+.pjl ul li a:hover {
+    background-color: rgb(218, 232, 251); /* Hover background color */
+    border-radius: 3px; /* Rounded corners like navbar */
+    color: rgb(44, 103, 188); /* Change text color on hover */
+}
 
