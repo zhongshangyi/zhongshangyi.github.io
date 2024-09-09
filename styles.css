@@ -12,6 +12,10 @@ body {
     
 }
 
+h1 {
+    color: rgba(98, 0, 195, 0.623);
+}
+
 
 .navbar {
     display: flex;
