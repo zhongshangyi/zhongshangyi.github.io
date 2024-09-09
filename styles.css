@@ -2,12 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    /* color:rgb(68, 68, 68) */
+    /* background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; */
+    
 }
+
 
 .navbar {
     display: flex;
     justify-content: space-around; /* Distribute items evenly */
-    background-color: white /* #f2f2f2 */; 
+    background-color: transparent /* #f2f2f2 */; 
     padding: 10px 0;
 }
 
@@ -23,6 +32,12 @@ body {
     color: rgb(44, 103, 188);
 }
 
+.navbar a.active {
+    background-color: rgb(218, 200, 245);
+    border-radius: 5px;
+    color: rgb(108, 37, 195);
+}
+
 .container {
     display: flex; /* Use flexbox for layout */
     align-items:flex-start; /* Center vertically */
@@ -30,26 +45,28 @@ body {
 
 .l {
     max-width: 30%; /* Adjust image width */
-    margin-right: 40px; /* Space between image and text */
+    margin-right: 120px; /* Space between image and text */
     margin-left: 40px;
     margin-top: 20px;
 }
 
 .l img {
     max-width: 100%;
+    border-radius: 30px;
+    /* box-shadow: 5px 5px 5px rgb(128, 128, 128); */
 }
 
 .l figcaption {
     text-align: center;
+    /* font-size: large; */
 }
 
 .r {
     flex: 1; /* Allow paragraph to grow */
-    margin-right: 40px;
+    margin-right: 120px;
 }
 
 .r p {
-    
     font-size: large;
     text-align: justify;
 }
@@ -115,7 +132,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .tb2{
